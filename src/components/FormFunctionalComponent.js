@@ -20,13 +20,10 @@ const FormFunctionalComponent = () => {
 	};
 	const handleSubmit = (e) => {
 		e.preventDefault();
-		let studentsData = {
-			name,
-			email,
-			course,
-		};
-
-		console.log(studentsData);
+		// Below, I Set the input value to empty after form submit
+		setName("");
+        setEmail("");
+        setCourse("");
 	};
 	return (
 		<div>
